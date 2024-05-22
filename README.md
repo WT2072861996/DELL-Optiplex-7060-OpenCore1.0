@@ -17,11 +17,11 @@
 
 BIOS 设置
 
-1:System Configuration--SATA Operation--AHCI
+System Configuration--SATA Operation--AHCI
 
-2:Secure Boot--Secure Boot Enable--Disabled
+Secure Boot--Secure Boot Enable--Disabled
 
-4:Intel® Software Guard Extensions™--Intel® SGX™--Disabled
+Intel® Software Guard Extensions™--Intel® SGX™--Disabled
 
 修改DVMT 使用这个工具（modGRUBShell）核显能不能驱动这一步很关键
 
