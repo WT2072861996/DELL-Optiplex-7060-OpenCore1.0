@@ -1,51 +1,39 @@
-戴尔 Optiplex 7060 台式电脑
+# Computer Configuration
 
-处理器：因特尔Core i5-8500T
+- **Model:** Dell Optiplex 7060 Desktop
+- **Processor:** Intel Core i5-8500T
+- **Memory:** 
+  - 16 GB (Kingston DDR4 2666MHz 8GB / Micron DDR4 2400MHz 4GB x 2)
+- **Graphics Card:** Intel UHD Graphics 630 (128 MB / Dell)
+- **Motherboard:** Dell ONC2VH (Q370 Chipset)
+- **Hard Drive:** Western Digital WD BLACK SN770.500GB (500 GB / Solid State Drive)
+- **Network Card:** Intel Ethernet Connection 1219-LM / Dell
+- **Audio Card:** Intel High Definition Audio (ALC255)
 
-内存  ：16 GB（金士顿DDR4 2666MHz 8GB ／镁光DDR4 2400MHz 4GB x 2）
+## BIOS Settings
 
-显卡  ：英特尔UHD Graphics 630(128 MB /戴尔）
+- **System Configuration**
+  - SATA Operation: AHCI
+- **Secure Boot**
+  - Secure Boot Enable: Disabled
+- **Intel Software Guard Extensions**
+  - Intel SGX: Disabled
 
-主板  ：戴尔ONC2VH (Q370 芯片组）
+## Modifying DVMT using modGRUBShell
 
-硬盘  ：西数 WD BLACK SN770.500GB (500 GB / 固态硬盘）
+To enable graphics driver, execute the following commands using modGRUBShell (modGRUBShell is already included in the boot):
 
-网卡  ：英特尔Ethernet Connection 1219-LM/戴尔
+- `setup_var 0x8DC 0x02` (Modify DVMT to 64MB)
+- `setup_var 0x5BE 0x00` (Disable CFG Lock)
 
-声卡  ：英特尔 High Definition Audio （ALC255）
+## Boot Configuration
 
+- Perfectly Supported:
+  - Audio Card
+  - Network Card
+  - Integrated Graphics
+  - DisplayPort Interface
+  - 3.5mm Headphone Jack
+  - Sleep/Wake Functionality
 
-BIOS 设置
-
-System Configuration--SATA Operation--AHCI
-
-Secure Boot--Secure Boot Enable--Disabled
-
-Intel® Software Guard Extensions™--Intel® SGX™--Disabled
-
-修改DVMT 使用这个工具（modGRUBShell）核显能不能驱动这一步很关键
-
-需要用modGRUBShell执行以下命令（引导里面已经配有modGRUBShell）
-
-• setup_var Ox8DC 0x0x2(修改DVMT为64MB）
-
-• setup_var Ox5BE Ox00（关闭CFG Lock)
-
-
-引导完善程度：
-
-声卡
-
-网卡
-
-核显
-
-DP接口
-
-3.5耳机接口
-
-睡眠唤醒
-
-以上已经完美驱动
-
-后续有问题我会更进
+Please let me know if you have any further questions or need additional assistance!
