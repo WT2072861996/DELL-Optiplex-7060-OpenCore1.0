@@ -2,8 +2,7 @@
 
 - **Model:** Dell Optiplex 7060 Desktop
 - **Processor:** Intel Core i5-8500T
-- **Memory:** 
-  - 16 GB (Kingston DDR4 2666MHz 8GB / Micron DDR4 2400MHz 4GB x 2)
+- **Memory:** 16 GB (Kingston DDR4 2666MHz 8GB / Micron DDR4 2400MHz 4GB x 2)
 - **Graphics Card:** Intel UHD Graphics 630 (128 MB / Dell)
 - **Motherboard:** Dell ONC2VH (Q370 Chipset)
 - **Hard Drive:** Western Digital WD BLACK SN770.500GB (500 GB / Solid State Drive)
